@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg1"
+    tools:context="com.example.lucky.renaissance17.About">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text="Renaissance is a Techno/Cultural fest which provides a versatile platform for all the students to learn and explore the various dimensions of their personality. Renaissance is an opportunity which provides that special edge and makes every student strong and competent to face the world.
+
+With events encompassing varied fields of science, technology and management. Renaissance , the annual techno-cultural fest of JECRC , invites students from all around the globe to put their inventiveness , ingenuity and aptitude to test at an unequaled level of competition. The fest offers its participants a wide spectrum of events to prove their mettle, while the huge amount of prize money is reflective of the magnificence of the same. Be a part of this techno-management extravaganza which is scheduled from 08-11 March 2017, as we once seek to captivate and enlighten you."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+</LinearLayout>
+</ScrollView>
