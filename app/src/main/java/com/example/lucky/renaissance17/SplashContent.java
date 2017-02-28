@@ -1,30 +1,22 @@
 package com.example.lucky.renaissance17;
 
-import android.app.ProgressDialog;
+
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.example.lucky.renaissance17.models.Event;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class SplashContent extends AppCompatActivity {
    ImageButton  b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16;
     static int a;
-    ProgressDialog pDialog;
-    String url = "http://www.jecrcrenaissance.in/events.json";
-    List<Event> eventList= new ArrayList<>();
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -187,7 +179,11 @@ public class SplashContent extends AppCompatActivity {
         });
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(SplashContent.this,Home.class);
+        startActivity(i);
+        super.onBackPressed();
+    }
 }
 

@@ -1,5 +1,6 @@
 package com.example.lucky.renaissance17;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TabHost;
@@ -54,5 +55,11 @@ public class Zarurat extends AppCompatActivity {
                 "Vinuj Arora: +91-9414250585 \n" +
                 "Damini Malik: +91-9694943151 \n" +
                 "Email: zarurat@jecrc.ac.in");
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Zarurat.this,Home.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

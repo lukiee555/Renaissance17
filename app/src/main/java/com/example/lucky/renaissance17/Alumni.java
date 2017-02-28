@@ -5,13 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TabHost;
 import android.widget.TextView;
 
 public class Alumni extends AppCompatActivity {
     TabHost tabHost;
     TextView t,c;
-    Button b1,b2,b3;
+   ImageButton  b1,b2,b3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,29 +24,29 @@ public class Alumni extends AppCompatActivity {
         t=(TextView)findViewById(R.id.textView);
 
         c=(TextView)findViewById(R.id.textView2);
-        b1=(Button)findViewById(R.id.button1);
-        b2=(Button)findViewById(R.id.button2);
-        b3=(Button)findViewById(R.id.button3);
+        b1=(ImageButton)findViewById(R.id.button1);
+        b2=(ImageButton) findViewById(R.id.button2);
+        b3=(ImageButton) findViewById(R.id.button3);
 
 
         host.setup();
 
         //Tab 1
         TabHost.TabSpec spec = host.newTabSpec("ABOUT");
-        spec.setContent(R.id.ABOUT);
+        spec.setContent(R.id.abt);
         spec.setIndicator("ABOUT");
         host.addTab(spec);
 
 
         //Tab 2
         spec = host.newTabSpec("EVENTS");
-        spec.setContent(R.id.EVENTS);
+        spec.setContent(R.id.events);
         spec.setIndicator("EVENTS");
         host.addTab(spec);
 
         //Tab 3
         spec = host.newTabSpec("CONTACT");
-        spec.setContent(R.id.CONTACT);
+        spec.setContent(R.id.cnt);
         spec.setIndicator("CONTACT");
         host.addTab(spec);
 
@@ -59,6 +60,7 @@ public class Alumni extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SplashContent.a=68;
                 Intent i1=new Intent(Alumni.this,Information.class);
                 startActivity(i1);
             }
@@ -68,6 +70,7 @@ public class Alumni extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SplashContent.a=69;
                 Intent i2=new Intent(Alumni.this,Information.class);
                 startActivity(i2);
             }
@@ -76,6 +79,7 @@ public class Alumni extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SplashContent.a=70;
                 Intent i3=new Intent(Alumni.this,Information.class);
                 startActivity(i3);
             }

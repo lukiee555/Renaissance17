@@ -57,44 +57,35 @@ public class Home extends AppCompatActivity
                 .load("http://www.jecrcrenaissance.in/event/assets/img/gallery/5-min.jpg")
                 .placeholder(R.mipmap.ic_launcher)   // optional
                 .error(R.mipmap.ic_launcher)      // optional
-                .resize(200, 87)                        // optional
-                .rotate(90)                             // optional
+                .resize(300, 200)
                 .into(i1);
         Picasso.with(this)
                 .load("http://www.jecrcrenaissance.in/event/assets/img/gallery/8-min.jpg")
                 .placeholder(R.mipmap.ic_launcher)   // optional
                 .error(R.mipmap.ic_launcher)      // optional
-                .resize(200, 87)                        // optional
-                .rotate(90)                             // optional
+                .resize(300, 200)                        // optional
                 .into(i2);
         Picasso.with(this)
                 .load("http://www.jecrcrenaissance.in/event/assets/img/gallery/6-min.jpg")
                 .placeholder(R.mipmap.ic_launcher)   // optional
                 .error(R.mipmap.ic_launcher)      // optional
-                .resize(200, 87)                        // optional
-                .rotate(90)                             // optional
+                .resize(300, 200)                        // optional
                 .into(i3);
         Picasso.with(this)
                 .load("http://www.jecrcrenaissance.in/event/assets/img/gallery/25-min.jpg")
                 .placeholder(R.mipmap.ic_launcher)   // optional
                 .error(R.mipmap.ic_launcher)      // optional
-                .resize(200, 87)                        // optional
-                .rotate(90)                             // optional
+                .resize(300, 200)                        // optional
                 .into(i4);
         Picasso.with(this)
                 .load("http://www.jecrcrenaissance.in/event/assets/img/gallery/18-min.jpg")
                 .placeholder(R.mipmap.ic_launcher)   // optional
                 .error(R.mipmap.ic_launcher)      // optional
-                .resize(200, 87)                        // optional
-                .rotate(90)                             // optional
+                .resize(300, 200)                        // optional
                 .into(i5);
 
 
 
-        CustomGestureDetector customGestureDetector = new CustomGestureDetector();
-        mGestureDetector = new GestureDetector(this, customGestureDetector);
-        viewFlipper.setInAnimation(this, android.R.anim.fade_in);
-        viewFlipper.setOutAnimation(this, android.R.anim.fade_out);
 
 
         setSupportActionBar(toolbar);
@@ -153,34 +144,7 @@ public class Home extends AppCompatActivity
             }
         });
     }
-    class CustomGestureDetector extends GestureDetector.SimpleOnGestureListener {
-        @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 
-            // Swipe left (next)
-            if (e1.getX() > e2.getX()) {
-                viewFlipper.setInAnimation(Home.this, R.anim.left_in);
-                viewFlipper.setOutAnimation(Home.this, R.anim.left_out);
-                viewFlipper.showNext();
-            }
-
-            // Swipe right (previous)
-            if (e1.getX() < e2.getX()) {
-                viewFlipper.setInAnimation(Home.this, R.anim.right_in);
-                viewFlipper.setOutAnimation(Home.this, R.anim.right_out);
-
-                viewFlipper.showPrevious();
-            }
-
-            return super.onFling(e1, e2, velocityX, velocityY);
-        }
-    }
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        mGestureDetector.onTouchEvent(event);
-
-        return super.onTouchEvent(event);
-    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

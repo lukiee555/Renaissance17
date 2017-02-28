@@ -44,7 +44,7 @@ public class Information extends AppCompatActivity {
         //Tab 3
         spec = host.newTabSpec("Register");
         spec.setContent(R.id.register);
-        spec.setIndicator("Tab Three");
+        spec.setIndicator("Register");
         host.addTab(spec);
 
         if(SplashContent.a==1){
@@ -2696,6 +2696,67 @@ public class Information extends AppCompatActivity {
                     startActivity(i);             }
             });
 
+        }
+        else if(SplashContent.a==68){
+            tv1.setText("The panelists discuss the issue or topic with each other by asking questions or reacting to the views and opinions of other panel members. A specific amount of time should be established. The leader or moderator closes the discussion and provides a summary of panel presentations and discussion.The topic for the discussion is (Demonetisation-A cure worse than the disease)");
+            tv2.setText("RULES\n"+"Number of members in a panel will be six.\n" +
+                    "The discussion will be moderated by the moderator.\n" +
+                    "Use of abusive language will not be entertained.");
+            tv3.setText("Entry Fee : NILL");
+            tv4.setText("Date: 11th March, 2017\n" +
+                    "Time: 01:30 PM to 3:00 PM\n" +
+                    "Venue: Conference Hall Block-A");
+            tv5.setText("Japleen Kaur : +91-9309393222\n" +
+                    "Nidhi Agiwal : +91-8764006683\n" +
+                    "Paridhi Sharma : +91-8114489399");
+            tv6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfTjS8CThPHf21-UggKRhf_3trRuMd7T6DuD7CM44gyC5T3VQ/viewform?c=0&w=1&usp=send_form"));
+                    startActivity(i);             }
+            });
+
+
+
+
+        }
+        else if(SplashContent.a==69){
+            tv1.setText("The session will be taken by'\n" +
+                    "Mr. Dhruv Mehta(2013,ME)\n" +
+                    "Financial Analyst, California Department of Insurance,USA");
+            tv2.setText("RULES\n"+"NILL");
+            tv3.setText("Entery fee\n"+"NILL");
+            tv4.setText("Date: 11th March, 2017\n" +
+                    "Time: 12:00 NOON-1:00PM\n" +
+                    "Venue: Conference Hall (A Block)");
+            tv5.setText("Sanya Khatri : +91-8561868161 \n" +
+                    "Vaibhav Vijay : +91-9982267285");
+
+            tv6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfTjS8CThPHf21-UggKRhf_3trRuMd7T6DuD7CM44gyC5T3VQ/viewform?c=0&w=1&usp=send_form"));
+                    startActivity(i);             }
+            });
+
+        }
+        else if(SplashContent.a==70){
+            tv1.setText("JECRC Alumni Association invites you to a fun filled Saturday at the ground, back with those stumps and bats which were once a part of your daily routine during those unforgettable cricket matches!\n" +
+                    "Participation in this event is restricted to JECRC alumni; they are encouraged to bring their friends as players or as part of the cheering squad.");
+            tv2.setText("RULES\n"+"Will be updated soon");
+            tv3.setText("FEE\n"+"will be updated soon");
+            tv4.setText("Date: 11th March, 2017\n" +
+                    "Time: 1:00 NOON-3:30PM\n" +
+                    "Venue: C Block Lawn");
+            tv5.setText("Will be updated soon");
+
+
+            tv6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfTjS8CThPHf21-UggKRhf_3trRuMd7T6DuD7CM44gyC5T3VQ/viewform?c=0&w=1&usp=send_form"));
+                    startActivity(i);             }
+            });
         }
 
     }

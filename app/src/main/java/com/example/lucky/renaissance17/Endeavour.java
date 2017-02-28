@@ -111,5 +111,11 @@ public class Endeavour extends AppCompatActivity {
         startActivity(i);
 
     }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Endeavour.this,Home.class);
+        startActivity(i);
+        super.onBackPressed();
+    }
 
 }

@@ -1,5 +1,6 @@
 package com.example.lucky.renaissance17;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -17,5 +18,11 @@ public class Dev extends AppCompatActivity {
         tv1.setText("Lokesh Soni\n"+"IT 2nd Year\n"+"Mobile:9829571189");
         tv2.setText("Asmita Goswami \n"+"IT 2nd Year");
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Dev.this,Home.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TabHost;
 
 public class Quanta extends AppCompatActivity {
-    Button b38,b39,b40,b41,b42,b43, b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36,b37;
+    ImageButton b38,b39,b40,b41,b42,b43, b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36,b37;
     TabHost tabHost;
 
     @Override
@@ -16,51 +17,50 @@ public class Quanta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quanta);
 
-        b1=(Button)findViewById(R.id.button1);
-        b2=(Button)findViewById(R.id.button2);
-        b3=(Button)findViewById(R.id.button3);
-        b4=(Button)findViewById(R.id.button4);
-        b5=(Button)findViewById(R.id.button5);
-        b6=(Button)findViewById(R.id.button6);
-        b7=(Button)findViewById(R.id.button7);
-        b8=(Button)findViewById(R.id.button8);
-        b9=(Button)findViewById(R.id.button9);
-        b10=(Button)findViewById(R.id.button10);
-        b37=(Button)findViewById(R.id.button37);
+        b1=(ImageButton) findViewById(R.id.button1);
+        b2=(ImageButton) findViewById(R.id.button2);
+        b3=(ImageButton) findViewById(R.id.button3);
+        b4=(ImageButton) findViewById(R.id.button4);
+        b5=(ImageButton) findViewById(R.id.button5);
+        b6=(ImageButton) findViewById(R.id.button6);
+        b7=(ImageButton) findViewById(R.id.button7);
+        b8=(ImageButton) findViewById(R.id.button8);
+        b9=(ImageButton) findViewById(R.id.button9);
+        b10=(ImageButton) findViewById(R.id.button10);
+        b37=(ImageButton) findViewById(R.id.button37);
+        b11=(ImageButton) findViewById(R.id.button11);
+        b12=(ImageButton) findViewById(R.id.button12);
+        b13=(ImageButton) findViewById(R.id.button13);
+        b14=(ImageButton) findViewById(R.id.button14);
+        b15=(ImageButton) findViewById(R.id.button15);
+        b16=(ImageButton) findViewById(R.id.button16);
+        b17=(ImageButton) findViewById(R.id.button17);
+        b18=(ImageButton) findViewById(R.id.button18);
+        b19=(ImageButton) findViewById(R.id.button19);
+        b20=(ImageButton) findViewById(R.id.button20);
 
-        b11=(Button)findViewById(R.id.button11);
-        b12=(Button)findViewById(R.id.button12);
-        b13=(Button)findViewById(R.id.button13);
-        b14=(Button)findViewById(R.id.button14);
-        b15=(Button)findViewById(R.id.button15);
-        b16=(Button)findViewById(R.id.button16);
-        b17=(Button)findViewById(R.id.button17);
-        b18=(Button)findViewById(R.id.button18);
-        b19=(Button)findViewById(R.id.button19);
-        b20=(Button)findViewById(R.id.button20);
-
-        b21=(Button)findViewById(R.id.button21);
-        b22=(Button)findViewById(R.id.button22);
-        b23=(Button)findViewById(R.id.button23);
-        b24=(Button)findViewById(R.id.button24);
-        b25=(Button)findViewById(R.id.button25);
-        b26=(Button)findViewById(R.id.button26);
-        b27=(Button)findViewById(R.id.button27);
-        b28=(Button)findViewById(R.id.button28);
-        b29=(Button)findViewById(R.id.button29);
-        b30=(Button)findViewById(R.id.button30);
-        b31=(Button)findViewById(R.id.button31);
-        b32=(Button)findViewById(R.id.button32);
-        b33=(Button)findViewById(R.id.button33);
-        b34=(Button)findViewById(R.id.button34);
-        b35=(Button)findViewById(R.id.button35);
-        b36=(Button)findViewById(R.id.button36);
-        b38=(Button)findViewById(R.id.button38);
-        b39=(Button)findViewById(R.id.button39);
-        b40=(Button)findViewById(R.id.button40);
-        b41=(Button)findViewById(R.id.button41);
-        b42=(Button)findViewById(R.id.button42);
-        b43=(Button)findViewById(R.id.button43);
+        b21=(ImageButton) findViewById(R.id.button21);
+        b22=(ImageButton) findViewById(R.id.button22);
+        b23=(ImageButton) findViewById(R.id.button23);
+        b24=(ImageButton) findViewById(R.id.button24);
+        b25=(ImageButton) findViewById(R.id.button25);
+        b26=(ImageButton) findViewById(R.id.button26);
+        b27=(ImageButton) findViewById(R.id.button27);
+        b28=(ImageButton) findViewById(R.id.button28);
+        b29=(ImageButton) findViewById(R.id.button29);
+        b30=(ImageButton) findViewById(R.id.button30);
+        b31=(ImageButton) findViewById(R.id.button31);
+        b32=(ImageButton) findViewById(R.id.button32);
+        b33=(ImageButton) findViewById(R.id.button33);
+        b34=(ImageButton) findViewById(R.id.button34);
+        b35=(ImageButton) findViewById(R.id.button35);
+        b36=(ImageButton) findViewById(R.id.button36);
+        b38=(ImageButton) findViewById(R.id.button38);
+        b39=(ImageButton) findViewById(R.id.button39);
+        b40=(ImageButton) findViewById(R.id.button40);
+        b41=(ImageButton) findViewById(R.id.button41);
+        b42=(ImageButton) findViewById(R.id.button42);
+        b43=(ImageButton) findViewById(R.id.button43);
         TabHost host = (TabHost)findViewById(R.id.tabHost);
         host.setup();
 
@@ -489,6 +489,12 @@ public class Quanta extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Quanta.this,Home.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 
 
