@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-
-
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
 
 
 public class SplashContent extends AppCompatActivity {
@@ -181,7 +180,7 @@ public class SplashContent extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent i=new Intent(SplashContent.this,Home.class);
+        Intent i=new Intent(SplashContent.this,MainFlowingActivity.class);
         startActivity(i);
         super.onBackPressed();
     }

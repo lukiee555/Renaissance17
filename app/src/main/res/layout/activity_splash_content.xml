@@ -14,6 +14,7 @@
 
 
         <ImageView
+
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
             android:layout_weight="1"
@@ -24,10 +25,11 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:layout_weight="1"
@@ -38,6 +40,7 @@
                />
 
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:layout_weight="1"
@@ -47,6 +50,7 @@
                 android:src="@drawable/beatthebeats"
                 />
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -58,10 +62,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -71,6 +76,7 @@
                 android:src="@drawable/pillow"
                 />
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -81,6 +87,7 @@
                 />
 
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -95,6 +102,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -105,6 +113,7 @@
                 />
 
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -114,6 +123,7 @@
                 android:src="@drawable/facepaint"
                />
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -128,6 +138,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -137,6 +148,7 @@
                 android:src="@drawable/football"
                  />
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -146,6 +158,7 @@
                 android:src="@drawable/mintowin"
                 />
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -160,6 +173,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -170,6 +184,7 @@
                  />
 
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -180,6 +195,7 @@
                />
 
             <ImageButton
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -198,7 +214,7 @@
             <ImageButton
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
-
+                android:background="@null"
                 android:scaleType="fitXY"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -208,7 +224,7 @@
             <ImageButton
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
-
+                android:background="@null"
                 android:scaleType="fitXY"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -218,7 +234,7 @@
             <ImageButton
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
-
+                android:background="@null"
                 android:scaleType="fitXY"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"

@@ -305,7 +305,7 @@
             <ImageButton
 
                 android:id="@+id/button17"
-                android:src="@drawable/comb"
+                android:background="@drawable/comb"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -314,7 +314,7 @@
             <ImageButton
 
                 android:id="@+id/button18"
-                android:src="@drawable/formula"
+                android:background="@drawable/formula"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -324,7 +324,7 @@
             <ImageButton
 
                 android:id="@+id/button19"
-                android:src="@drawable/line"
+                android:background="@drawable/line"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -340,7 +340,7 @@
             <ImageButton
 
                 android:id="@+id/button38"
-                android:src="@drawable/techack"
+                android:background="@drawable/techack"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -349,7 +349,7 @@
             <ImageButton
 
                 android:id="@+id/button39"
-                android:src="@drawable/brainwiz"
+                android:background="@drawable/brainwiz"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -359,7 +359,7 @@
             <ImageButton
 
                 android:id="@+id/button40"
-                android:src="@drawable/technobuzz"
+                android:background="@drawable/technobuzz"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -374,7 +374,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageButton
-
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -384,14 +384,14 @@
             <ImageButton
 
                 android:id="@+id/button20"
-                android:src="@drawable/robowar"
+                android:background="@drawable/robowar"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" />
             <ImageButton
-
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -429,7 +429,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button21"
-                android:src="@drawable/embryo"
+                android:background="@drawable/embryo"
                  />
 
 
@@ -439,7 +439,7 @@
             <ImageButton
 
                 android:id="@+id/button22"
-                android:src="@drawable/fork"
+                android:background="@drawable/fork"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -448,7 +448,7 @@
             <ImageButton
 
                 android:id="@+id/button23"
-                android:src="@drawable/cadmania"
+                android:background="@drawable/cadmania"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -470,7 +470,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button24"
-                android:src="@drawable/mighty"
+                android:background="@drawable/mighty"
                 />
             <ImageButton
                 android:adjustViewBounds="true"
@@ -479,13 +479,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button25"
-                android:src="@drawable/propello"
+                android:background="@drawable/propello"
                 />
 
             <ImageButton
 
                 android:id="@+id/button26"
-                android:src="@drawable/revengg"
+                android:background="@drawable/revengg"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -513,7 +513,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:id="@+id/button42"
-                    android:src="@drawable/brainwiz"
+                    android:background="@drawable/brainwiz"
                     />
 
                 <ImageButton
@@ -523,7 +523,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:id="@+id/button43"
-                    android:src="@drawable/show"
+                    android:background="@drawable/show"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -544,7 +544,7 @@
             <ImageButton
 
                 android:id="@+id/button27"
-                android:src="@drawable/comb"
+                android:background="@drawable/comb"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -559,13 +559,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button28"
-                android:src="@drawable/embryo"
+                android:background="@drawable/embryo"
                  />
 
             <ImageButton
 
                 android:id="@+id/button29"
-                android:src="@drawable/brainwiz"
+                android:background="@drawable/brainwiz"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -584,7 +584,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button30"
-                android:src="@drawable/crazyinn"
+                android:background="@drawable/crazyinn"
                 />
 
 
@@ -594,7 +594,7 @@
             <ImageButton
 
                 android:id="@+id/button31"
-                android:src="@drawable/automagic"
+                android:background="@drawable/automagic"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -602,7 +602,7 @@
                 android:layout_height="fill_parent" />
             <ImageButton
 
-
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -632,7 +632,7 @@
             <ImageButton
 
                 android:id="@+id/button32"
-                android:src="@drawable/brainwiz"
+                android:background="@drawable/brainwiz"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -646,12 +646,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/button33"
-                android:src="@drawable/junkyard"
+                android:background="@drawable/junkyard"
                  />
             <ImageButton
 
                 android:id="@+id/button34"
-                android:src="@drawable/letme"
+                android:background="@drawable/letme"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -667,7 +667,7 @@
             <ImageButton
 
                 android:id="@+id/button35"
-                android:src="@drawable/penitdown"
+                android:background="@drawable/penitdown"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -677,7 +677,7 @@
             <ImageButton
 
                 android:id="@+id/button36"
-                android:src="@drawable/drishyam"
+                android:background="@drawable/drishyam"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -685,7 +685,7 @@
                 android:layout_height="fill_parent"  />
             <ImageButton
 
-
+                android:background="@null"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:scaleType="fitXY"

@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <group android:checkableBehavior="single">
 
         <item
             android:id="@+id/Schedule"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/itn"
             android:title="ITINERARY"
 
         />
         <item
             android:id="@+id/Social"
-            android:icon="@drawable/ic_menu_slideshow"
+
             android:title="Social Media" >
             <menu>
                 <item android:id="@+id/yt"
+                    app:showAsAction="always"
+                    android:icon="@drawable/youtube"
                     android:title="Youtube" />
                 <item android:id="@+id/fb"
+                    app:showAsAction="always"
+                    android:icon="@drawable/facbook"
                     android:title="Facebook" />
                 <item android:id="@+id/ig"
+                    app:showAsAction="always"
+                    android:icon="@drawable/instagram"
                     android:title="Instagram" />
                 <item android:id="@+id/tw"
+                    app:showAsAction="always"
+                    android:icon="@drawable/twitter"
                     android:title="Twitter" />
             </menu>
         </item>
         <item
             android:id="@+id/about"
-            android:icon="@drawable/ic_menu_manage"
+
+            android:icon="@drawable/aboutus"
             android:title="About us" />
     </group>
 

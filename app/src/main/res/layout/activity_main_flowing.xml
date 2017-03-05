@@ -1,0 +1,187 @@
+<com.mxn.soul.flowingdrawer_core.LeftDrawerLayout
+    android:id="@+id/id_drawerlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+    <!--content-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- View that will be hidden when video goes fullscreen -->
+        <RelativeLayout
+            android:layout_marginTop="?attr/actionBarSize"
+            android:id="@+id/nonVideoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <!--This is the relative layout where you;ll need to keep your code for the layout displayed on scrreen. Consider it as the root of your activity_main file-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg1"
+                android:id="@+id/content_home"
+             >
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoStart="true"
+                    android:flipInterval="2000" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/im1"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/im2"
+                        android:layout_above="@+id/button3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/im3"
+                        android:layout_above="@+id/button3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/im4"
+                        android:layout_above="@+id/button3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/im5"
+                        android:layout_above="@+id/button3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </ViewFlipper>
+                        <LinearLayout
+                            android:weightSum="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_weight=".5"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/date"
+                                android:src="@drawable/date"
+
+                                />
+                            <ImageView
+                                android:layout_weight=".25"
+                                android:layout_width="50dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/tp"
+                                android:src="@drawable/prize"
+
+                                />
+                            <ImageView
+                                android:layout_weight=".25"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/money"
+                                android:src="@drawable/prixe"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_below="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/view_feed_toolbar" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--menu-->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false"
+        >
+
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            />
+
+
+
+    </RelativeLayout>
+    <!--menu-->
+</com.mxn.soul.flowingdrawer_core.LeftDrawerLayout>

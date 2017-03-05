@@ -1,8 +1,11 @@
 package com.example.lucky.renaissance17;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TabHost;
+
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
 
 public class Schedule extends AppCompatActivity {
 
@@ -39,5 +42,11 @@ public class Schedule extends AppCompatActivity {
         spec.setContent(R.id.DAY4);
         spec.setIndicator("DAY4");
         host.addTab(spec);
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Schedule.this,MainFlowingActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

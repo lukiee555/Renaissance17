@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
+
 public class Endeavour extends AppCompatActivity {
    ImageButton  b9,b2,b3,b4,b5,b6,b7,b8;
 
@@ -113,7 +115,7 @@ public class Endeavour extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent i=new Intent(Endeavour.this,Home.class);
+        Intent i=new Intent(Endeavour.this,MainFlowingActivity.class);
         startActivity(i);
         super.onBackPressed();
     }

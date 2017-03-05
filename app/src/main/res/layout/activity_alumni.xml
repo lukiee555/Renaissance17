@@ -6,6 +6,7 @@
     android:id="@+id/activity_alumni"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg1"
     android:orientation="vertical">
 
     -
@@ -15,10 +16,13 @@
     android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
         android:id="@+id/tabHost"
-    android:background="@color/colorPrimaryDark">
+    >
 
     -<LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
     android:orientation="vertical">
 
     <TabWidget android:layout_height="wrap_content"
@@ -41,6 +45,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:id="@+id/textView"/>
 
 
@@ -63,6 +68,7 @@
             >
 
                 <ImageButton
+                    android:background="@null"
                     android:adjustViewBounds="true"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
@@ -73,6 +79,7 @@
                     />
 
                 <ImageButton
+                    android:background="@null"
                     android:adjustViewBounds="true"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
@@ -82,6 +89,7 @@
                     android:src="@drawable/letshangout"
                      />
                 <ImageButton
+                    android:background="@null"
                     android:adjustViewBounds="true"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
@@ -103,6 +111,7 @@
             android:background="@drawable/bg1">
 
             <TextView
+                android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"/>

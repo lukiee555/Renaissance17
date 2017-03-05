@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TabHost;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
+
 public class Quanta extends AppCompatActivity {
     ImageButton b38,b39,b40,b41,b42,b43, b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36,b37;
     TabHost tabHost;
@@ -492,7 +494,7 @@ public class Quanta extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent i=new Intent(Quanta.this,Home.class);
+        Intent i=new Intent(Quanta.this,MainFlowingActivity.class);
         startActivity(i);
         super.onBackPressed();
     }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lucky.renaissance17">
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".Splash"
@@ -21,10 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+    <activity android:name=".Sponsors"/>
         <activity android:name=".SplashContent" />
         <activity android:name=".Endeavour" />
         <activity android:name=".Information" />
@@ -33,7 +31,10 @@
         <activity android:name=".About" />
         <activity android:name=".Dev" />
         <activity android:name=".Zarurat" />
-        <activity android:name=".Alumni"></activity>
+        <activity android:name=".Alumni" />
+        <activity android:name=".FlowingActivities.MainFlowingActivity"
+            android:theme="@style/AppThemeFlowing"
+            ></activity>
     </application>
 
 </manifest>

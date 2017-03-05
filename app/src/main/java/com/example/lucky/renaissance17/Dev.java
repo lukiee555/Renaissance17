@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
+
 public class Dev extends AppCompatActivity {
     TextView tv1,tv2;
 
@@ -21,7 +23,7 @@ public class Dev extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent i=new Intent(Dev.this,Home.class);
+        Intent i=new Intent(Dev.this,MainFlowingActivity.class);
         startActivity(i);
         super.onBackPressed();
     }

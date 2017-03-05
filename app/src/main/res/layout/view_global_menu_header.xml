@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/vGlobalMenuHeader"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/app_icon_header"
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#dddddd" />
+</FrameLayout>

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
+
 public class Zarurat extends AppCompatActivity {
     TabHost tabHost;
     TextView t,b,c;
@@ -58,7 +60,7 @@ public class Zarurat extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent i=new Intent(Zarurat.this,Home.class);
+        Intent i=new Intent(Zarurat.this,MainFlowingActivity.class);
         startActivity(i);
         super.onBackPressed();
     }

@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
+
 public class Alumni extends AppCompatActivity {
     TabHost tabHost;
     TextView t,c;
@@ -84,5 +86,11 @@ public class Alumni extends AppCompatActivity {
                 startActivity(i3);
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Alumni.this,MainFlowingActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

@@ -2,19 +2,32 @@ package com.example.lucky.renaissance17;
 
 
 import android.content.Intent;
-import android.icu.text.StringPrepParseException;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.example.lucky.renaissance17.FlowingActivities.MainFlowingActivity;
 
 
-public class Information extends AppCompatActivity {
-    TabHost tabHost;
+public class Information extends AppCompatActivity implements TabHost.OnTabChangeListener {
+
     TextView tv1,tv2,tv3,tv4,tv5,tv6;
+
+
+    private static final int ANIMATION_TIME = 240;
+    private TabHost tabHost;
+    private View previousView;
+    private View currentView;
+    private int currentTab;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +59,11 @@ public class Information extends AppCompatActivity {
         spec.setContent(R.id.register);
         spec.setIndicator("Register");
         host.addTab(spec);
+        public AnimatedTabHostListener(TabHost tabHost)
+        {
+            this.tabHost = tabHost;
+            this.previousView = tabHost.getCurrentView();
+        }
 
         if(SplashContent.a==1){
            tv1.setText("Antakshri is a spoken parlor game played in India, Bangladesh, Pakistan and Nepal.Each contestant sings the first verse of movie(Bollywood songs) that begins with the Hindustani consonant on which the previous consonant’s song selection ended.\n" +
@@ -2758,6 +2776,63 @@ public class Information extends AppCompatActivity {
                     startActivity(i);             }
             });
         }
+
+    }
+    @Override
+    public boolean onTouchEvent(MotionEvent touchevent) {
+        float lastX = 0,currentX;
+        switch (touchevent.getAction()) {
+            // when user first touches the screen to swap
+            case MotionEvent.ACTION_DOWN: {
+                lastX = touchevent.getX();
+                break;
+            }
+            case MotionEvent.ACTION_UP: {
+                 currentX = touchevent.getX();
+
+                // if left to right swipe on screen
+                if (lastX < currentX) {
+
+                    switchTabs(false);
+                }
+
+                // if right to left swipe on screen
+                if (lastX > currentX) {
+                    switchTabs(true);
+                }
+
+                break;
+            }
+        }
+        return false;
+    }
+    public void switchTabs(boolean direction) {
+        if (direction) // true = move left
+        {
+            if (tabHost.getCurrentTab() == 0)
+                tabHost.setCurrentTab(tabHost.getTabWidget().getTabCount() - 1);
+            else
+                tabHost.setCurrentTab(tabHost.getCurrentTab() - 1);
+        } else
+        // move right
+        {
+            if (tabHost.getCurrentTab() != (tabHost.getTabWidget()
+                    .getTabCount() - 1))
+                tabHost.setCurrentTab(tabHost.getCurrentTab() + 1);
+            else
+                tabHost.setCurrentTab(0);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i=new Intent(Information.this,MainFlowingActivity.class);
+        startActivity(i);
+        super.onBackPressed();
+    }
+
+    @Override
+    public void onTabChanged(String tabId) {
 
     }
 }
